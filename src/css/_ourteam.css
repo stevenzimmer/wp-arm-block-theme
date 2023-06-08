@@ -1,0 +1,14 @@
+.group {
+    &-nav {
+        @apply capitalize;
+        &.active {
+            @apply bg-blue-dark text-white;
+        }
+    }
+    &-wrapper {
+        @apply hidden;
+        &.active {
+            @apply block;
+        }
+    }
+}

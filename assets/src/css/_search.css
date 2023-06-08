@@ -1,0 +1,52 @@
+.search {
+    &-overlay {
+        transition: opacity 0.2s, transform 0.2s, visibility 0.2s;
+        z-index: 3000;
+        &.active {
+            @apply visible opacity-100 scale-100;
+        }
+    }
+
+    &-term {
+        &.withvalue,
+        &:focus {
+            + label {
+                transition-property: top, font-size;
+                @apply -top-3 text-xs;
+            }
+        }
+    }
+}
+
+.spinner {
+    &-loader {
+        @apply border-4 border-blue-500 border-opacity-20;
+        border-top-color: black;
+        /* -webkit-animation: spin 1s infinite linear;
+        animation: spin 1s infinite linear; */
+    }
+}
+
+.result {
+    &-li {
+        a {
+            em {
+                @apply text-blue-lighter not-italic;
+            }
+        }
+        em {
+            @apply font-extrabold text-black not-italic;
+        }
+    }
+}
+.sui {
+    &-facet {
+        .sui {
+            &-facet {
+                &__title {
+                    @apply text-base text-blue-dark;
+                }
+            }
+        }
+    }
+}

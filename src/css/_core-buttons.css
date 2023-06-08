@@ -1,0 +1,14 @@
+.wp {
+    &-block {
+        &-button {
+            &__link {
+                @apply whitespace-nowrap font-semibold text-sm px-5 py-3 rounded-full no-underline transition-opacity duration-200  inline-block;
+                min-width: 150px;
+
+                &:hover {
+                    @apply no-underline opacity-75;
+                }
+            }
+        }
+    }
+}

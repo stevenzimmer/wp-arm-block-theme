@@ -1,0 +1,29 @@
+/* .leadership {
+    &-bio {
+        @apply h-20;
+        &.active {
+            @apply h-full visible;
+
+            p {
+                @apply block overflow-auto;
+            }
+        }
+
+        p {
+            @apply overflow-hidden;
+            display: box;
+            display: -moz-box;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 4;
+        }
+    }
+}
+
+.arrow {
+    &-shield {
+        &.active {
+            @apply -rotate-90;
+        }
+    }
+} */

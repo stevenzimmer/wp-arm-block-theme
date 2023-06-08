@@ -1,0 +1,188 @@
+.mktoForm {
+    &.newsletter {
+        @apply p-0 !important;
+        .mktoFormRow {
+            @apply mx-0 !important;
+
+            .mktoFieldDescriptor {
+                @apply mb-0 px-0  !important;
+                .mktoFieldWrap {
+                    .mktoLogicalField {
+                        label {
+                            @apply text-white mb-0;
+                        }
+                    }
+                    .mktoField {
+                        @apply h-10 bg-white text-black border-0 transition-colors duration-200 placeholder:text-black   !important;
+
+                        &.mktoInvalid {
+                            @apply border !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        .mktoButtonRow {
+            @apply absolute top-0 right-0 mt-0 w-28 px-0 !important;
+            .mktoButtonWrap {
+                @apply flex items-center justify-end h-full w-full;
+                .mktoButton {
+                    @apply w-full min-w-0 py-2 px-4 rounded h-full text-center not-italic bg-yellow-light text-black font-semibold font-os capitalize !important;
+                }
+            }
+        }
+    }
+
+    @apply w-full p-0 leading-tight md:p-4 !important;
+
+    .mktoFormRow {
+        @apply w-full flex -mx-0.5;
+
+        .mktoClear {
+            @apply hidden;
+        }
+
+        .mktoFieldDescriptor,
+        .mktoFormCol {
+            @apply w-full float-none relative px-1 mb-0 min-h-0 !important;
+
+            .mktoOffset {
+                @apply hidden;
+            }
+
+            .mktoFieldWrap {
+                @apply w-full p-0 float-none inline-block !important;
+
+                .mktoGutter {
+                    @apply hidden;
+                }
+
+                &.mktoRequiredField {
+                    .mktoLabel {
+                        .mktoAsterix {
+                            @apply hidden;
+                        }
+                    }
+                }
+
+                .mktoLogicalField {
+                    @apply w-full !important;
+
+                    &.mktoCheckboxList {
+                        label {
+                            @apply text-xs text-white;
+                        }
+
+                        input {
+                            @apply w-4 h-4 !important;
+                        }
+                    }
+                }
+
+                .mktoHtmlText {
+                    @apply text-white w-full mb-6 px-0 !important;
+
+                    h3 {
+                        @apply font-asBold text-white;
+                    }
+                    span {
+                        @apply text-xs;
+                    }
+                }
+
+                label {
+                    &.mktoLabel {
+                        @apply hidden;
+                    }
+                    &#LblcloudDeployment {
+                        @apply block;
+                    }
+                }
+
+                textarea {
+                    &.mktoField {
+                        @apply h-16 !important;
+                    }
+                }
+
+                .mktoField {
+                    @apply w-full inline-block h-8 px-2 py-1 outline-none rounded border border-[#8C8C8C] bg-white text-[#8C8C8C] text-[14px] placeholder:text-grey-500 !important;
+                    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+                    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+
+                    &:focus {
+                        @apply text-white;
+                        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+                            0 0 8px rgba(102, 175, 233, 0.6);
+                        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+                            0 0 8px rgba(102, 175, 233, 0.6);
+                    }
+
+                    &.mktoInvalid {
+                        @apply bg-red-50 border-red-500 text-grey-600 !important;
+                    }
+                }
+
+                .mktoRadioList {
+                    @apply flex flex-wrap w-full !important;
+
+                    .mktoField {
+                        @apply h-4 w-4 mr-2 !important;
+                    }
+
+                    label {
+                        @apply ml-0 mr-4 text-white w-auto;
+                    }
+                }
+            }
+
+            .mktoOffset {
+                @apply hidden !important;
+            }
+        }
+    }
+
+    .mktoButtonRow {
+        @apply w-full py-0 px-1 my-0 mt-2 text-center !important;
+
+        .mktoButtonWrap {
+            @apply w-full ml-0 !important;
+
+            .mktoButton {
+                @apply uppercase text-sm px-5 rounded-full no-underline transition-colors duration-200 font-bold py-3 inline-block border-yellow-light bg-yellow-light text-black  !important;
+                background-image: none !important;
+                min-width: 180px;
+
+                @screen md {
+                    min-width: 180px;
+                }
+
+                &:hover {
+                    @apply bg-opacity-80 border-yellow-light !important;
+                }
+            }
+        }
+    }
+}
+
+::placeholder {
+    @apply text-white text-xs !important;
+}
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    @apply text-white text-xs !important;
+}
+::-moz-placeholder {
+    /* Firefox 19+ */
+    @apply text-white text-xs !important;
+}
+:-ms-input-placeholder {
+    /* IE 10+ */
+    @apply text-white text-xs !important;
+}
+:-moz-placeholder {
+    /* Firefox 18- */
+    @apply text-white text-xs !important;
+}

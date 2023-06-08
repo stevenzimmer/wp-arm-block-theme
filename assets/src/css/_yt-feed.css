@@ -1,0 +1,28 @@
+.yt {
+    &-feed {
+        &-box {
+            &.active {
+                @apply bg-blue-100;
+
+                &:hover {
+                    @apply bg-blue-100;
+                }
+
+                .play-btn {
+                    @apply opacity-100;
+
+                    &-inner {
+                        fill: #000;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.play-btn {
+    &-inner {
+        fill: transparent;
+        stroke: #000;
+    }
+}

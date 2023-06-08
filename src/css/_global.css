@@ -1,0 +1,17 @@
+html {
+     scroll-behavior: smooth;
+}
+
+body.freeze {
+    @apply overflow-y-hidden lg:overflow-y-auto;
+}
+.spinner {
+    &-loader {
+        @apply border-4 border-blue-500 border-opacity-20;
+        border-top-color: black;
+    }
+}
+
+[class*="aos-"] {
+    @apply opacity-0;
+}

@@ -1,0 +1,77 @@
+.content {
+    &-body {
+        @apply text-[14px] md:text-[16px] leading-normal;
+        &.quote {
+            ul {
+                @apply text-xl;
+            }
+            a.source {
+                @apply text-yellow-light;
+            }
+        }
+
+        &.two {
+            &-col {
+                @apply m-0 text-sm;
+                p {
+                    @apply m-0;
+                }
+                ul {
+                    @apply list-none pl-5;
+                    /*  */
+
+                    li {
+                        @apply list-outside relative;
+                        /* &::marker {
+                            width: 10px;
+                            /* font-size: 5rem; */
+
+                        &::before {
+                            @apply object-contain bg-no-repeat inline-block absolute -left-5 top-1;
+                            content: "";
+                            background-size: 15px;
+                            width: 20px;
+                            height: 20px;
+                            background-image: url(../images/icons/custom-bullet.png);
+                        }
+                    }
+                }
+            }
+        }
+        &.equation {
+            ul {
+                @apply pl-4 list-outside;
+                li {
+                    ul {
+                        @apply pl-0 list-none list-outside;
+                        li:before {
+                            content: "-";
+                            text-indent: -5px;
+                        }
+                    }
+                }
+            }
+        }
+        h2,
+        h3,
+        h4 {
+            @apply mb-3;
+        }
+        h2 {
+            @apply font-asBold;
+        }
+
+        ul,
+        ol {
+            @apply pl-8 mb-2;
+        }
+
+        p {
+            @apply mb-6;
+
+            /* & + h2 {
+                @apply mt-0;
+            } */
+        }
+    }
+}

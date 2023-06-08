@@ -1,0 +1,81 @@
+.wp {
+    &-site {
+        &-blocks {
+            @apply overflow-x-hidden;
+            .wp {
+                &-block {
+                    &-quote {
+                        @apply m-0 border-l-blue-lighter;
+                    }
+                    &-group {
+                        .breadcrumbs {
+                            &-wrapper {
+                                .breadcrumbs {
+                                    @apply p-0;
+                                    .breadcrumb {
+                                        &-item {
+                                            .breadcrumb {
+                                                @apply text-blue-lighter;
+                                            }
+                                        }
+                                    }
+
+                                    &__current {
+                                        @apply text-white;
+                                    }
+                                }
+                            }
+                        }
+
+                        &:where(.has-background) {
+                            @apply p-0;
+                        }
+                    }
+                }
+            }
+
+            .wp {
+                &-block {
+                    &-column {
+                        @apply mb-6 md:mb-0 last:mb-0;
+                        &[style*="flex-basis: 66.66%"] {
+                            @apply lg:basis-2/3 !important;
+                        }
+                        &[style*="flex-basis: 33.33%"] {
+                            @apply lg:basis-1/3 !important;
+                        }
+
+                        .wp {
+                            &-block {
+                                &-image {
+                                    @apply mb-0;
+                                }
+                            }
+                        }
+                    }
+
+                    &-media {
+                        &-text {
+                            &__content {
+                                @apply px-3;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .has {
+                &-text {
+                    &-align {
+                        &-right {
+                            @apply text-right;
+                        }
+                        &-center {
+                            @apply text-center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

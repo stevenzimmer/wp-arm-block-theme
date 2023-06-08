@@ -1,0 +1,79 @@
+.package {
+  &-card {
+    &.active {
+      @apply bg-a-yellow;
+      .package-card-inner {
+        @apply  shadow-none border-b-0 rounded-b-none ;
+      }
+
+      .tile-floater {
+        @apply hidden lg:block;
+      }
+      
+
+      .package {
+
+        &-toggle {
+          &-btn {
+            @apply bg-transparent;
+
+            .open {
+              @apply hidden;
+
+            }
+
+            .close {
+              @apply block;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &-product {
+    &.active {
+      @apply block;
+
+    }
+    &-inner {
+      &.active {
+        @apply bg-slate-100;
+      }
+    }
+    &-wrapper {
+
+      &-community {
+        @apply rounded-2xl lg:rounded-tr-2xl;
+      }
+      &-team {
+
+      @apply rounded-2xl lg:rounded-t-2xl;
+      }
+      &-enterprise {
+          @apply rounded-2xl lg:rounded-tl-2xl;
+      }
+    }
+  }
+
+
+  &-open {
+    @apply bg-a-yellow;
+
+  }
+  &-close {
+    @apply hidden bg-transparent;
+    
+  }
+
+  &-table {
+    &.active {
+      @apply block;
+      .table {
+        &-wrapper {
+          @apply block;
+        }
+      }
+    }
+  }
+}

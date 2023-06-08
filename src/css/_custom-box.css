@@ -1,0 +1,12 @@
+.custom {
+    &-box {
+        @apply pb-20;
+        .wp {
+            &-block {
+                &-buttons {
+                    @apply absolute left-0 right-0 bottom-6 text-center;
+                }
+            }
+        }
+    }
+}

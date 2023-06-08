@@ -1,0 +1,5 @@
+.event {
+    &-block {
+        @apply text-amber-500;
+    }
+}

@@ -1,0 +1,59 @@
+.flexible {
+    &-content {
+        &-editor {
+            h2 {
+                @apply mb-6 text-xl m-0 md:text-2xl;
+            }
+        }
+    }
+}
+
+.flex {
+    &-hero {
+        &-with {
+            &-form {
+                .body {
+                    p {
+                        @apply text-xl;
+                    }
+
+                    strong {
+                        @apply text-yellow-light font-normal;
+                    }
+                }
+
+                .mktoForm {
+                    .mktoButtonRow {
+                        @apply text-center !important;
+
+                        .mktoButtonWrap {
+                            .mktoButton {
+                                /* @apply capitalize   !important; */
+
+                                /* &:hover {
+                                    @apply bg-opacity-80 border-blue-dark !important;
+                                } */
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &-columns {
+        &-with {
+            &-icons {
+                .col {
+                    .body {
+                        p,
+                        ul,
+                        ol {
+                            @apply text-sm mb-2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

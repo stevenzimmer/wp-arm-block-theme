@@ -1,0 +1,140 @@
+{
+    "key": "group_5c6b799d86231",
+    "title": "Component — [✅ In use] Adjustable Image",
+    "fields": [
+        {
+            "key": "field_5c6b799d92e59",
+            "label": "Image File",
+            "name": "image_file",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "hide_label": 0,
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5c6b79c35537d",
+            "label": "Sizing Treatment",
+            "name": "sizing_treatment",
+            "type": "button_group",
+            "instructions": "Rendered\/set size for this image. Default uses the as-uploaded natural size. @2x divides the uploaded image size by 2; @3x divides it by 3. (Note: image sizing will ultimately defer to any presets on the containing Section)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "default": "Default",
+                "@2x": "@2x",
+                "@3x": "@3x",
+                "custom": "Custom"
+            },
+            "allow_null": 0,
+            "default_value": "default",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_5c6b7a1f5537e",
+            "label": "Custom Size",
+            "name": "custom_size",
+            "type": "group",
+            "instructions": "Supply a target size for the image to render at. Note that the width will take higher priority than the height, and that the height is often locked to be no wider than its containing block.",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c6b79c35537d",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_5df939f2b619d",
+                    "label": "Width",
+                    "name": "width",
+                    "type": "number",
+                    "instructions": "Desired image width",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "px",
+                    "min": 1,
+                    "max": 2400,
+                    "step": ""
+                },
+                {
+                    "key": "field_5df93a14b619e",
+                    "label": "Height",
+                    "name": "height",
+                    "type": "number",
+                    "instructions": "Desired image height",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "px",
+                    "min": 1,
+                    "max": 2400,
+                    "step": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "modified": 1628178915
+}

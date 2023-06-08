@@ -1,0 +1,10 @@
+.pricing {
+    &-card {
+        &.active {
+            @apply bg-grey-100 -translate-y-1 shadow-lg;
+            .btn {
+                @apply bg-yellow-light text-black no-underline;
+            }
+        }
+    }
+}

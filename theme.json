@@ -1,0 +1,141 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 2,
+    "patterns": ["highlighted-content-section", "highlighted-content-row", "page-cta","icons-row", "page-hero"],    
+    "styles": {
+        "blocks": {
+            "core/heading": {
+                "color": {
+                    "text": "#263D5C"
+                },
+                "elements": {
+                    "h1": {
+                        "typography": {
+                            "fontFamily": "'AmpleSoftPro-Bold', Arial, sans-serif",
+                            "fontWeight": "700",
+                            "lineHeight": "1.25"
+                        }
+                    },
+                    "h2": {
+                        "typography": {
+                            "fontFamily": "'AmpleSoftPro-Regular', Arial, sans-serif",
+                            "fontSize": "36",
+                            "lineHeight": "1.25",
+
+                            "fontWeight": "400"
+                        }
+                    },
+                    "h3": {
+                        "typography": {
+                            "fontFamily": "'AmpleSoftPro-Medium', Arial, sans-serif",
+                            "fontSize": "30",
+                            "lineHeight": "1.25",
+                            "fontWeight": "500"
+                        }
+                    }
+                }
+            },
+          
+
+            "core/button": {
+                "color": {
+                    "text": "#000000",
+                    "background": "var(--wp--preset--color--yellow)"
+                }
+            }
+        }
+    },
+    "customTemplates": [
+        {
+            "name": "page-blocks",
+            "title": "Blocks",
+            "postTypes": ["page"]
+        },
+
+        {
+            "name": "front-page",
+            "title": "Front Page",
+            "postTypes": ["page"]
+        },
+
+        {
+            "name": "page-body",
+            "title": "Body",
+            "postTypes": ["page", "cpt_events"]
+        },
+        {
+            "name": "single-cpt_resources",
+            "title": "Resource Single"
+        },
+        {
+            "name": "archive-cpt_resources",
+            "title": "Resource Archive"
+        }
+    ],
+    "settings": {
+        "layout": {
+            "wideSize": "1200px",
+            "contentSize": "800px"
+        },
+        "color": {
+            "defaultPalette": false,
+            "palette": [
+                {
+                    "slug": "black",
+                    "color": "#000000",
+                    "name": "Black"
+                },
+                {
+                    "slug": "white",
+                    "color": "#FFFFFF",
+                    "name": "White"
+                },
+                {
+                    "slug": "grey-light",
+                    "color": "#f1f5f9",
+                    "name": "Light Grey"
+                },
+                {
+                    "slug": "grey",
+                    "color": "#64748b",
+                    "name": "Grey"
+                },
+                {
+                    "slug": "purple",
+                    "color": "#001321",
+                    "name": "Purple"
+                },
+                {
+                    "slug": "blue-primary",
+                    "color": "#263D5C",
+                    "name": "Primary Blue"
+                },
+                {
+                    "slug": "blue-dark",
+                    "color": "#005491",
+                    "name": "Dark Blue"
+                },
+                {
+                    "slug": "blue-darker",
+                    "color": "#21344C",
+                    "name": "Darker Blue"
+                },
+                {
+                    "slug": "blue-light",
+                    "color": "#4AC1E0",
+                    "name": "Light Blue"
+                },
+                {
+                    "slug": "yellow",
+                    "color": "#F4B700",
+                    "name": "Yellow"
+                },
+                {
+                    "slug": "green",
+                    "color": "#006B68",
+                    "name": "Green"
+                }
+            ]
+        }
+    }
+}

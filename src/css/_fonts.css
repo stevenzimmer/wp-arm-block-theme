@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "AmpleSoftPro-Regular";
+    src: url("./../fonts/amplesoftpro/regular/font.woff") format("woff"),
+        url("./../fonts/amplesoftpro/regular/font.woff2") format("woff2");
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "AmpleSoftPro-Bold";
+    src: url("./../fonts/amplesoftpro/bold/font.woff") format("woff"),
+        url("./../fonts/amplesoftpro/bold/font.woff2") format("woff2");
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "AmpleSoftPro-Medium";
+    src: url("./../fonts/amplesoftpro/medium/font.woff") format("woff"),
+        url("./../fonts/amplesoftpro/medium/font.woff2") format("woff2");
+    font-weight: 700;
+    font-display: swap;
+}

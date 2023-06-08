@@ -1,0 +1,18 @@
+.faq {
+    &-item {
+        &.active {
+            @apply bg-grey-100 border-grey-100;
+            .faq {
+                &-question {
+                    /* @apply border-grey-100; */
+                }
+                &-caret {
+                    @apply rotate-180;
+                }
+                &-answer {
+                    @apply block;
+                }
+            }
+        }
+    }
+}

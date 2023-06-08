@@ -1,0 +1,19 @@
+.single-cpt_events {
+    .global-wrapper {
+        .global-main {
+            @apply pt-0;
+        }
+    }
+}
+
+.archive {
+    &.post-type-archive-cpt_events {
+        .global {
+            &-wrapper {
+                .global-main {
+                    @apply bg-white p-0;
+                }
+            }
+        }
+    }
+}

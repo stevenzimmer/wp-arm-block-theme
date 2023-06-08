@@ -1,0 +1,61 @@
+.btn {
+    @apply whitespace-nowrap text-sm md:text-base px-6 rounded-full no-underline transition-colors duration-200 font-bold py-4 inline-block;
+    min-width: 160px;
+
+    @screen md {
+        min-width: 200px;
+    }
+
+    &-sm {
+        @apply px-5 py-2 text-[12px];
+        min-width: 120px;
+
+        @screen md {
+            min-width: 160px;
+        }
+    }
+
+    &-mini {
+        @apply px-2 py-1 text-[12px];
+        min-width: 100px;
+    }
+
+    &:hover {
+        @apply no-underline;
+    }
+    &-primary {
+        @apply bg-green-dark text-white;
+
+        &:hover {
+            @apply bg-opacity-80 text-white;
+        }
+    }
+
+    &-ghost {
+        @apply bg-transparent;
+
+        &-primary {
+            @apply border-2 border-green-dark text-green-dark;
+
+            &:hover {
+                @apply bg-green-dark text-white;
+            }
+        }
+
+        &-white {
+            @apply border-2 border-white text-white;
+
+            &:hover {
+                @apply bg-white text-green-dark;
+            }
+        }
+
+        &-secondary {
+            @apply border-2 border-blue-primary text-blue-primary;
+
+            &:hover {
+                @apply bg-blue-primary text-white;
+            }
+        }
+    }
+}

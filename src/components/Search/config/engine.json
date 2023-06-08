@@ -1,0 +1,30 @@
+{
+    "engineName": "cross-site-meta",
+    "endpointBase": "https://docs-team.ent.us-east-2.aws.elastic-cloud.com",
+    "searchKey": "search-z3ds6mojn9me3sjeasaxebhr",
+    "resultFields": [
+        "url_path_dir3",
+        "additional_urls",
+        "body_content",
+        "domains",
+        "title",
+        "meta_keywords",
+        "url",
+        "url_scheme",
+        "meta_description",
+        "headings",
+        "links",
+        "url_port",
+        "url_host",
+        "url_path_dir2",
+        "url_path",
+        "url_path_dir1",
+        "number",
+        "locked",
+        "id"
+    ],
+    "sortFields": ["title"],
+    "facets": ["url_host"],
+    "titleField": "title",
+    "urlField": "url"
+}

@@ -1,0 +1,83 @@
+.content {
+    &-body {
+        &.quote {
+            ul {
+                @apply text-xl;
+            }
+            a.source {
+                @apply text-yellow-light;
+            }
+        }
+
+        &.two {
+            &-col {
+                @apply m-0 text-sm;
+                p {
+                    @apply m-0;
+                }
+                ul {
+                    @apply list-none pl-5;
+
+                    li {
+                        @apply list-outside relative;
+
+                        &::before {
+                            @apply object-contain bg-no-repeat inline-block absolute -left-5 top-1;
+                            content: "";
+                            background-size: 15px;
+                            width: 20px;
+                            height: 20px;
+                            background-image: url(../images/icons/custom-bullet.png);
+                        }
+                    }
+                }
+            }
+        }
+        &.equation {
+            ul {
+                @apply pl-4 list-outside;
+                li {
+                    ul {
+                        @apply pl-0 list-none list-outside;
+                        li:before {
+                            content: "-";
+                            text-indent: -5px;
+                        }
+                    }
+                }
+            }
+        }
+        h1 {
+            @apply text-3xl;
+        }
+        h2 {
+            @apply text-xl mb-4 md:text-4xl;
+        }
+
+        ul,
+        ol {
+            @apply pl-8 mb-2;
+        }
+
+        p {
+            @apply mb-2;
+
+            & + h2 {
+                @apply mt-0;
+            }
+        }
+    }
+}
+
+.blog-post {
+    > *:not(.wp-block-group) {
+        @apply w-11/12 md:w-[875px] mx-auto;
+    }
+}
+
+.prose :where(a):not(:where([class~=not-prose] *)) {
+color:inherit;
+}
+.prose :where(.prose>ul>li>:last-child):not(:where([class~=not-prose] *)) {
+color:inherit;
+}

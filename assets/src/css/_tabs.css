@@ -1,0 +1,17 @@
+.tab {
+    &-item {
+        @apply opacity-60;
+
+        &.active {
+            @apply opacity-100 border-b-8;
+        }
+    }
+
+    &-panel {
+        @apply hidden;
+
+        &.active {
+            @apply block;
+        }
+    }
+}

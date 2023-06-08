@@ -1,0 +1,151 @@
+.trigger {
+    &-enter {
+        > a {
+            @apply text-[#4AC1E0];
+        }
+        .dropdown {
+            @apply block left-1;
+
+            &-pointer {
+                @apply rotate-0;
+            }
+        }
+        &-active {
+            .dropdown {
+                @apply opacity-100 left-0;
+            }
+        }
+    }
+}
+.dropdown {
+    &-bg {
+        transition: all 0.3s, opacity 0.1s, translate 0.1s;
+        transform-origin: 50% 0%;
+        &.open {
+            @apply opacity-100 visible;
+        }
+    }
+}
+.mobile {
+    &-backdrop {
+        transition: backdrop-filter 0.2s;
+        &.active {
+            @apply block;
+            @media screen(lg) {
+                @apply hidden;
+            }
+        }
+    }
+    &-dropdown {
+        .dropdown {
+            @apply hidden;
+        }
+    }
+    &-menu {
+        &-wrapper {
+            &.active {
+                @apply block;
+                @media screen(lg) {
+                    @apply hidden;
+                }
+            }
+        }
+        &-item {
+            &.active {
+                @apply text-white;
+                .mobile {
+                    &-dropdown {
+                        @apply block;
+                    }
+                    &-caret {
+                        @apply rotate-90;
+                    }
+                }
+            }
+        }
+    }
+    &-toggle {
+        @apply absolute z-10 w-8;
+        height: 23px;
+        &::before {
+            @apply absolute bg-white top-0 left-0 w-8;
+            content: "";
+            height: 2px;
+            transform-origin: 4px 0;
+            transition: all 0.2s ease-out;
+        }
+        &::after {
+            @apply absolute left-0 bg-white w-8 bottom-0;
+            content: "";
+            height: 2px;
+            transform-origin: 0 100%;
+            transition: all 0.2s ease-out;
+        }
+        /* @screen lg {
+            display: none;
+        } */
+        .nav-bar {
+            @apply absolute bg-white left-0 w-8 top-2.5;
+            height: 2px;
+            transition: all 0.2s ease-out;
+            transform-origin: 0 50%;
+        }
+        &.close-x {
+            &::before {
+                top: 1px;
+                transform: rotate(45deg) scaleX(1.1);
+            }
+            .nav-bar {
+                @apply opacity-0;
+                transform: scaleX(0);
+            }
+            &::after {
+                transform: rotate(-45deg) scaleX(1.1) translateY(1px);
+            }
+        }
+    }
+}
+
+.main {
+    &-nav {
+        &-wrapper {
+            &.scrolled {
+                @apply fixed top-0 left-0 right-0 z-50 w-full  shadow-md;
+            }
+        }
+    }
+}
+
+.announcement {
+    &-banner {
+        @apply h-0;
+
+        &.active {
+            @apply h-[50px];
+        }
+    }
+}
+
+/* Logged in Nav style */
+.admin-bar {
+    &.logged-in {
+        nav {
+            &.fixed {
+                top: 32px;
+                .menu {
+                    &-primary {
+                        .dropdown {
+                            &-horizontal {
+                                .sub {
+                                    &-menu {
+                                        top: 106px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

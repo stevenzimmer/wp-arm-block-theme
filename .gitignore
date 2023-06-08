@@ -1,0 +1,12 @@
+node_modules
+
+build
+ee
+icons
+template-parts
+dist
+images
+logos
+less 
+vendor
+fonts

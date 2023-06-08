@@ -1,0 +1,9 @@
+.is {
+    &-root {
+        &-container {
+            [class*="aos-"] {
+                @apply opacity-100;
+            }
+        }
+    }
+}
